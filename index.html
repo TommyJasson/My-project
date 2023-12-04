@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>Understanding Tommy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <style> 
+    
+    ul.sidenav {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 25%;
+      background-color: #FF7070;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+
+    ul.sidenav li a {
+      display: block;
+      color: #000;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    ul.sidenav li a.active {
+      background-color: #FF7070;
+      color: 000;
+    }
+
+    ul.sidenav li a:hover:not(.active) {
+      background-color: #F6C127;
+      color: white;
+    }
+
+    div.content {
+      margin-left: 25%;
+      padding: 1px 16px;
+      height: 1000px;
+    }
+
+    @media screen and (max-width: 900px) {
+      ul.sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+
+      ul.sidenav li a {
+        float: left;
+        padding: 15px;
+      }
+
+      div.content {margin-left: 0;}
+    }
+
+    @media screen and (max-width: 400px) {
+      ul.sidenav li a {
+        text-align: center;
+        float: none;
+      }
+    }
+
+    .rectangle {
+  border: 10px #FF7070 solid;
+  position: static;
+  width: auto;
+  height: 400px;
+  left: auto;
+  bottom: 150px;
+  background-image: url("Image1.JPG");
+  	background-size: cover;
+  	background-position: center center; 
+  	background-repeat: no-repeat;   
+			}
+    .rectanglesmall {
+      position: absolute;
+      top: 420;
+      left: 24;
+      width: 673px;
+      height: 128px;
+      background-color: #FF7070; 
+    }
+    
+      position: left;
+      width: auto;
+      height: 300px;
+      bottom: auto;
+      left: 516px;
+      border: 5px white solid;
+  </style>
+</head>
+
+<body>
+  <nav>
+    
+  <ul class="sidenav">
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="https://tommyjasson.github.io/MainProject2">About Me</a></li>
+    <li><a href="https://tommyjasson.github.io/Interests">Interests</a></li>
+    <li><a href="#Hobbies">Hobbies</a></li>
+    <li><a href="#Projects">Projects</a></li>
+    <li><a href="#Contact">Contact</a></li>
+  </ul>
+  </nav>
+
+  <div class="content">
+    <div id="home">
+      <h1>Understanding Tommy</h1>
+      <div class="rectangle">
+        <div class="rectanglesmall"></div>
+      </div>
+    </div>
+	</div>    
+</body>
+
+</html>
