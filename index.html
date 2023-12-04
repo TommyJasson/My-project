@@ -4,57 +4,81 @@
   <title>Understanding Tommy</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=IM Bodini Poster|Didot|Playfair Display" rel="stylesheet">
   <style> 
     
     @font-face{
-      font-family: "Roboto", sans-serif;
-      src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");  
+      font-family: "Bodini Poster", serif;
     }
     
     @font-face{
-      font-family: "Nunito", sans-serif;
-      src: url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+      font-family: "Didot", serif;
     }
     
-          .Header {
-        font-family: "Roboto", sans-serif;
-        font-size: 30px;
-        color: black;
-        font-weight: 700;
+     @font-face{
+      font-family: "Playfair Display", serif;
+    }
+    
+          .Header1 {
+        font-family: "Bodini Poster", serif;
+        font-size: 50px;
+        color: white;
+        font-weight: 900;
+        text-align: left;
+        
       }
-      
-      .Body {
-        font-family: "Nunito", sans-serif;
-        font-size: 20px;
-        color: black;
+    
+    .Header2{
+      font-family: "Playfair Display", serif;
+        font-size: 35px;
+        color: white;
         font-weight: 500;
-      }
+        text-align: right;
+      padding: 20px;
+    }
+      
+      .Body1 {
+        font-family: "Didot", serif;
+        font-size: 20px;
+        color: white;
+        font-weight: 100;
+        text-align: right;
+        padding: 20px;
+    }
+    
+    .Body2 {
+      font-family: "Playfair Display", serif;
+        font-size: 20px;
+        color: white;
+        font-weight: 500;
+    }
 
     ul.sidenav {
       list-style-type: none;
       margin: 0;
       padding: 0;
       width: 15%;
-      background-color: darkred;
+      background-color: black;
       position: fixed;
       height: 100%;
       overflow: auto;
+      color: white;
     }
 
     ul.sidenav li a {
       display: block;
-      color: #000;
       padding: 8px 16px;
       text-decoration: none;
+      color: grey;
     }
 
     ul.sidenav li a.active {
-      background-color: darkred;
-      color: black;
+      background-color: black;
+      color: white;
     }
 
     ul.sidenav li a:hover:not(.active) {
-      background-color: darkred;
+      background-color: black;
       color: white;
     }
 
@@ -69,11 +93,13 @@
         width: 100%;
         height: auto;
         position: relative;
+        color: white;
       }
 
       ul.sidenav li a {
         float: left;
         padding: 15px;
+        color: grey;
       }
 
       div.content {margin-left: 0;}
@@ -85,29 +111,17 @@
         float: none;
       }
     }
-
-    .rectangle {
-  border: 10px black groove;
-  position: static;
-  width: auto;
-  height: 400px;
-  left: auto;
-  bottom: 150px;
-  background-image: url("Image1.JPG");
-  	background-size: cover;
-  	background-position: center center; 
-  	background-repeat: no-repeat;   
-			}
     
     .rectanglesmall {
-      position: absolute;
-      top: 420;
-      left: 24;
-      width: 673px;
-      height: 128px;
-      background-color: black; 
+      position: left;
+      top: 200px;
+      width: 500px;
+      height: 400px;
     }
     
+    body {
+      background-color: black;
+    }
       position: left;
       width: auto;
       height: 300px;
@@ -122,19 +136,20 @@
   <nav>
     
   <ul class="sidenav">
-    <li><a class="active Body" href="#home">Home</a></li>
-    <li><a href="https://tommyjasson.github.io/MainProject2" class="Body">About Me</a></li>
-    <li><a href="https://tommyjasson.github.io/Interests" class="Body">Interests</a></li>
-    <li><a href="#Hobbies" class="Body">Hobbies</a></li>
-    <li><a href="#Projects" class="Body">Projects</a></li>
-    <li><a href="#Contact" class="Body">Contact</a></li>
+    <li><a class="active Body2" href="#home">Home</a></li>
+    <li><a href="https://tommyjasson.github.io/MainProject2" class="Body2">About Me</a></li>
+    <li><a href="https://tommyjasson.github.io/Interests" class="Body2">Interests</a></li>
+    <li><a href="#Hobbies" class="Body2">Hobbies</a></li>
+    <li><a href="#Projects" class="Body2">Projects</a></li>
+    <li><a href="#Contact" class="Body2">Contact</a></li>
   </ul>
   </nav>
 
   <div class="content">
     <div id="home">
-      <h1 class="Header"> Understanding Tommy </h1>
-      <p class="Body"> Hi my name is tommy and i like to you </p>
+      <h1 class="Header1"> Getting To Know Thomas Jasson </h1>
+      <h2 class="Header2"> hfhf vhf </h2>
+      <p class="Body1"> Body #1 </p>
       <div class="rectangle">
         <div class="rectanglesmall"></div>
       </div>
