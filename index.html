@@ -6,12 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <style> 
     
+    @font-face{
+      font-family: "Roboto", sans-serif;
+      src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");  
+    }
+    
+    @font-face{
+      font-family: "Nunito", sans-serif;
+      src: url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+    }
+    
+          .Header {
+        font-family: "Roboto", sans-serif;
+        font-size: 30px;
+        color: black;
+        font-weight: 700;
+      }
+      
+      .Body {
+        font-family: "Nunito", sans-serif;
+        font-size: 20px;
+        color: black;
+        font-weight: 500;
+      }
+
     ul.sidenav {
       list-style-type: none;
       margin: 0;
       padding: 0;
-      width: 25%;
-      background-color: #FF7070;
+      width: 15%;
+      background-color: darkred;
       position: fixed;
       height: 100%;
       overflow: auto;
@@ -25,12 +49,12 @@
     }
 
     ul.sidenav li a.active {
-      background-color: #FF7070;
-      color: 000;
+      background-color: darkred;
+      color: black;
     }
 
     ul.sidenav li a:hover:not(.active) {
-      background-color: #F6C127;
+      background-color: darkred;
       color: white;
     }
 
@@ -63,7 +87,7 @@
     }
 
     .rectangle {
-  border: 10px #FF7070 solid;
+  border: 10px black groove;
   position: static;
   width: auto;
   height: 400px;
@@ -74,13 +98,14 @@
   	background-position: center center; 
   	background-repeat: no-repeat;   
 			}
+    
     .rectanglesmall {
       position: absolute;
       top: 420;
       left: 24;
       width: 673px;
       height: 128px;
-      background-color: #FF7070; 
+      background-color: black; 
     }
     
       position: left;
@@ -89,6 +114,7 @@
       bottom: auto;
       left: 516px;
       border: 5px white solid;
+    
   </style>
 </head>
 
@@ -96,18 +122,19 @@
   <nav>
     
   <ul class="sidenav">
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a href="https://tommyjasson.github.io/MainProject2">About Me</a></li>
-    <li><a href="https://tommyjasson.github.io/Interests">Interests</a></li>
-    <li><a href="#Hobbies">Hobbies</a></li>
-    <li><a href="#Projects">Projects</a></li>
-    <li><a href="#Contact">Contact</a></li>
+    <li><a class="active Body" href="#home">Home</a></li>
+    <li><a href="https://tommyjasson.github.io/MainProject2" class="Body">About Me</a></li>
+    <li><a href="https://tommyjasson.github.io/Interests" class="Body">Interests</a></li>
+    <li><a href="#Hobbies" class="Body">Hobbies</a></li>
+    <li><a href="#Projects" class="Body">Projects</a></li>
+    <li><a href="#Contact" class="Body">Contact</a></li>
   </ul>
   </nav>
 
   <div class="content">
     <div id="home">
-      <h1>Understanding Tommy</h1>
+      <h1 class="Header"> Understanding Tommy </h1>
+      <p class="Body"> Hi my name is tommy and i like to you </p>
       <div class="rectangle">
         <div class="rectanglesmall"></div>
       </div>
